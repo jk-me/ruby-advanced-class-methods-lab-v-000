@@ -36,7 +36,7 @@ class Song
   def self.find_or_create_by_name(n)
     x = self.find_by_name(n)
     if x.name==n 
-      self.find_by_name(n)
+      x
     else 
       self.create_by_name(n)
     end
